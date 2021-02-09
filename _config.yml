@@ -81,8 +81,8 @@ analytics:
 # Site Author
 author:
   name             : "Pranjal Drall"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  avatar           : "profile.jpg"
+  bio              : ""
   location         : "New Haven, CT"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
