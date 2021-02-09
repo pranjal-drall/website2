@@ -11,9 +11,9 @@ title                    : "Pranjal Drall"
 title_separator          : "-"
 name                     : &name "Pranjal Drall"
 description              : &description "personal description"
-url                      : https://pranjal-drall.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://pranjal-drall.github.io/website2/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "pranjaldrall.github.io"
+repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -50,7 +50,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : "google0c63682077158b11.html"
+google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -72,19 +72,23 @@ social:
 
 
 # Analytics
-google_analytics     :  UA-130665516-1
-
+analytics:
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
 
 
 # Site Author
 author:
   name             : "Pranjal Drall"
-  avatar           : "tam-profilepic.jpeg"
+  avatar           : "profile.jpg"
   bio              : "Predoctoral Fellow at Yale Law School/Yale Tobin Center for Economic Policy."
   location         : "New Haven, CT"
   employer         :
+  pubmed           : ""
   googlescholar    : ""
-  email            : "pranjal.drall@yale.edu"
+  email            :
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -92,13 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : ""
+  github           : "pranjal-drall"
   google_plus      :
   keybase          :
   instagram        :
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :  ""
-  orcid            :
+  linkedin         :
+  orcid            : ""
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -110,7 +115,6 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
 
 
 # Reading Files
@@ -125,22 +129,23 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
   - CHANGELOG
-  - config
+  - Capfile
   - Gemfile
   - Gruntfile.js
-  - gulpfile.js
   - LICENSE
+  - README
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
   - log
   - node_modules
   - package.json
-  - Rakefile
-  - README
   - tmp
+  - vendor
 keep_files:
   - .git
   - .svn
@@ -171,16 +176,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -250,11 +255,11 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
