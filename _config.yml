@@ -9,11 +9,11 @@
 locale                   : "en-US"
 title                    : "Pranjal Drall"
 title_separator          : "-"
-name                     : &name "About"
+name                     : &name "Pranjal Drall"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://pranjal-drall.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "pranjaldrall.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -50,14 +50,14 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
+google_site_verification : "google0c63682077158b11.html"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : PranjalDrall
+  username               : &twitter
 facebook:
   username               :
   app_id                 :
@@ -72,23 +72,19 @@ social:
 
 
 # Analytics
-analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          :
+google_analytics     :  UA-130665516-1
+
 
 
 # Site Author
 author:
   name             : "Pranjal Drall"
-  avatar           : "profile.jpg"
-  bio              : ""
+  avatar           : "tam-profilepic.jpeg"
+  bio              : "Predoctoral Fellow at Yale Law School/Yale Tobin Center for Economic Policy."
   location         : "New Haven, CT"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : ""
+  email            : "pranjal.drall@yale.edu"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,25 +92,25 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "pranjal-drall"
+  github           : ""
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         :  ""
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "PranjalDrall"
+  twitter          : ""
   vine             :
   weibo            :
   xing             :
   youtube          :
   wikipedia        :
+
 
 
 # Reading Files
@@ -129,23 +125,22 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - CHANGELOG
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
   - Capfile
+  - CHANGELOG
+  - config
   - Gemfile
   - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - config
   - gulpfile.js
+  - LICENSE
   - log
   - node_modules
   - package.json
+  - Rakefile
+  - README
   - tmp
-  - vendor
 keep_files:
   - .git
   - .svn
@@ -176,16 +171,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: false
+    output: true
     permalink: /:collection/:path/
   publications:
-    output: false
+    output: true
     permalink: /:collection/:path/
   portfolio:
-    output: false
+    output: true
     permalink: /:collection/:path/
   talks:
-    output: false
+    output: true
     permalink: /:collection/:path/
 
 
@@ -255,11 +250,11 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-plugins:
+gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
